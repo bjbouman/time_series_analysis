@@ -1,0 +1,405 @@
+Gene;Entrez Gene ID;Description
+Abca9;217262;ATP-binding cassette, sub-family A (ABC1), member 9
+Abce1;24015;ATP-binding cassette, sub-family E (OABP), member 1
+Ablim3;319713;actin binding LIM protein family, member 3
+Abtb2;99382;ankyrin repeat and BTB (POZ) domain containing 2 
+Acsl1;14081;acyl-CoA synthetase long-chain family member 1 
+Adamdec1;58860;ADAM-like, decysin 1
+Adar;56417;adenosine deaminase, RNA-specific 
+Adm;11535;adrenomedullin
+Agpat9;231510;1-acylglycerol-3-phosphate O-acyltransferase 9 
+Aim2;383619;absent in melanoma 2
+Akt3;23797;v-akt murine thymoma viral oncogene homolog 3 
+Aldh1a1;11668;aldehyde dehydrogenase 1 family, member A1
+Alyref;21681;Aly/REF export factor
+Amph;218038;amphiphysin 
+Angptl1;72713;angiopoietin-like 1 
+Ankrd22;52024;Ankyrin Repeat Domain 22
+Apol2;239552;apolipoprotein L, 2 
+Apol6;71939;apolipoprotein L, 6 
+Aqp9;64008;apolipoprotein L, 9
+Arg2;11847;arginase 2 
+Arhgef3;71704;Rho guanine nucleotide exchange factor (GEF) 3
+Arntl;11865;aryl hydrocarbon receptor nuclear translocator-like
+Atf2;11909;activating transcription factor 2 
+Atf3;11910;activating transcription factor 3 
+B2m;12010;beta-2-microglobulin
+Bag1;12017;BCL2-associated athanogene
+Bak1;12018;BCL2-antagonist/killer 1
+Banf1;23825;barrier to autointegration factor 1
+Batf2;74481;basic leucine zipper transcription factor, ATF-like 2 
+Bax;12028;BCL2-associated X protein
+Bcl2;12043;B cell leukemia/lymphoma 2
+Bcl2l1;12048;BCL2-like 1
+Bcl3;12051;B cell leukemia/lymphoma 3
+Birc2;11797;baculoviral IAP repeat-containing 2
+Birc3;11796;baculoviral IAP repeat-containing 3
+Blvra;109778;biliverdin reductase A
+Blzf1;66352;basic leucine zipper nuclear factor 1 
+Bst2;69550;bone marrow stromal cell antigen 2 
+Bub1;12235;BUB1 mitotic checkpoint serine/threonine kinase
+C10orf10;213393;chromosome 10 open reading frame 10 
+C15orf48;433470;chromosome 15 open reading frame 48 
+C1S;317677;complement component 1, s subcomponent
+C22orf28;28088;chromosome 22 open reading frame 28
+C4orf32;70617;chromosome 4 open reading frame 32
+C4orf33;73852;chromosome 4 open reading frame 33
+C9orf91;230279;chromosome 9 open reading frame 91 
+Calr;12317;calreticulin
+Canx;12330;calnexin
+Casp1;12362;caspase 1
+Casp7;12369;caspase 1, apoptosis-related cysteine peptidase 
+Ccdc75;53951;caspase 7, apoptosis-related cysteine peptidase
+Ccl11;20292;C-C Motif Chemokine Ligand 11
+Ccl2;20293;C-C Motif Chemokine Ligand 2
+Ccl22;20299;C-C Motif Chemokine Ligand 22
+Ccl4;20303;C-C Motif Chemokine Ligand 4
+Ccl5;20304;C-C Motif Chemokine Ligand 5
+Ccna1;12427;cyclin A1 
+Ccr1;12768;chemokine (C-C motif) receptor 1 
+Ccr7;12775;chemokine (C-C motif) receptor 7 
+Cd163;93671;CD163 molecule 
+Cd274;60533;CD274 molecule 
+Cd38;12494;CD38 molecule 
+Cd40;21939;CD40molecule 
+Cd69;12515;CD69 molecule 
+Cd74;16149;CD74vmolecule 
+Cd9;12527;CD9 molecule 
+Cdk17;237459;cyclin-dependent kinase 17 
+Cdk18;18557;cyclin-dependent kinase 18 
+Cdkn1a;12575;cyclin-dependent kinase inhibitor 1A (p21, Cip1) 
+Ces1;12623;carboxylesterase 1 
+Cfb;14962;complement factor B 
+Chmp5;76959;charged multivesicular body protein 5
+Chuk;12675;conserved helix-loop-helix ubiquitous kinase
+Ciita;12265;class II transactivator
+Clec4d;17474;C-type lectin domain family 4, member D 
+Clec4e;56619;C-type lectin domain family 4, member E 
+Clec5a;23845;C-type lectin domain family 5, member a
+Cnp;12799;2',3'-cyclic nucleotide 3' phosphodiesterase 
+Commd3;12238;COMM domain containing 3 
+Cpt1a;12894;carnitine palmitoyltransferase 1A (liver)
+Creb3l3;208677;cAMP responsive element binding protein 3-like 3 
+Crebbp;12914;CREB binding protein
+Crebzf;233490;CREB/ATF bZIP transcription factor
+Crp;12944;C-Reactive Protein
+Cry1;12952;cryptochrome circadian clock 1
+Csrnp1;215418;cysteine-serine-rich nuclear protein 1
+Cx3cl1;20312;chemokine (C-X3-C motif) ligand 1
+Cxcl10;15945;C-X-C Motif Chemokine Ligand 10
+Cxcl9;17329;C-X-C Motif Chemokine Ligand 9
+Cxcr4;12767;chemokine (C-X-C motif) receptor 4
+Cyp1b1;13078;cytochrome P450, family 1, subfamily B, polypeptide 1 
+Cyth1;19157;cytohesin 1
+Dcp1a;75901;Decapping MRNA 1A
+Ddit4;74747;DNA-damage-inducible transcript 4 
+Ddx58;230073;DEAD (Asp-Glu-Ala-Asp) box polypeptide 58 
+Ddx60;234311;DEAD (Asp-Glu-Ala-Asp) box polypeptide 60
+Dhx58;80861;DEXH (Asp-Glu-X-His) box polypeptide 58
+Dtx3l;209200;deltex 3 like, E3 ubiquitin ligase
+Duox2;214593;dual oxidase 2
+Dusp5;240672;dual specificity phosphatase 5 
+Dynlt1;100040531;dynein, light chain, Tctex-type 1 
+Ehd4;98878;EH-domain containing 4 
+Eif2ak2;19106;eukaryotic translation initiation factor 2-alpha kinase 2 
+Eif3l;223691;eukaryotic translation initiation factor 3, subunit L 
+Elf1;13709;E74-like factor 1 (ets domain transcription factor) 
+Enpp1;18605;ectonucleotide pyrophosphatase/phosphodiesterase 1 
+Epas1;13819;endothelial PAS domain protein 1
+Erlin1;226144;ER lipid raft associated 1 
+Etv6;14011;ets variant 6 
+Ext1;14042;exostosin glycosyltransferase 1 
+Fadd;14082;Fas (TNFRSF6)-associated via death domain
+Fam125b;72543;family with sequence similarity 125, member B 
+Fam134b;66270;family with sequence similarity 134, member B 
+Fam46a;212943;family with sequence similarity 46, member A
+Fam46c;74645;family with sequence similarity 46, member C 
+Fam70a;245386;family with sequence similarity 70, member A 
+Fbxo6;50762;F-box protein 6
+Fcgr1a;14129;Fc fragment of IgG, high affinity Ia, receptor (CD64) 
+Ffar2;233079;free fatty acid receptor 2
+Fgr;14191;FGR proto-oncogene, Src family tyrosine kinase
+Fkbp5;14229;FK506 binding protein 5 
+Flt1;14254;fms-related tyrosine kinase 1 
+Fndc3b;72007;fibronectin type III domain containing 3B
+Fndc4;64339;fibronectin type III domain containing 4
+Fosl1;14283;fos-like antigen 1
+Fut4;14345;fucosyltransferase 4 (alpha (1,3) fucosyltransferase, myeloid-specific)
+Fv1;14349;Friend virus susceptibility 1
+Fzd5;14367;frizzled class receptor 5
+G6Pc;14377;Glucose-6-Phosphatase Catalytic Subunit
+Gak;231580;cyclin G associated kinase 
+Galnt2;108148;polypeptide N-acetylgalactosaminyltransferase 2
+Gbp2;14468;guanylate binding protein 2, interferon-inducible
+Gbp4;55932;guanylate binding protein 4 
+Gbp5;229898;guanylate binding protein 5 
+Gca;227960;grancalcin, EF-hand calcium binding protein
+Gch1;14528;GTP cyclohydrolase 1 
+Gem;14579;GTP binding protein overexpressed in skeletal muscle 
+Gja4;14612;gap junction protein, alpha 4, 37kDa 
+Gk;14933;glycerol kinase
+Glipr2;384009;GLI pathogenesis-related 2
+Glrx;93692;glutaredoxin (thioltransferase) 
+Gmpr;66355;guanosine monophosphate reductase
+Gpx2;14776;glutathione peroxidase 2 
+Gtpbp2;56055;GTP binding protein 2
+Gzmb;14939;Granzyme B
+Hbxip;68576;late endosomal/lysosomal adaptor, MAPK and MTOR activator 5
+Heg1;77446;heart development protein with EGF-like domains 1 
+Herc6;67138;HECT and RLD domain containing E3 ubiquitin protein ligase family member 6
+Hesx1;15209;HESX homeobox 1 
+Hk2;15277;hexokinase 2
+Hla-f;100529082;major histocompatibility complex, class I, F
+Hla-g;14991;major histocompatibility complex, class I, G
+Hnrnpul1;232989;heterogeneous nuclear ribonucleoprotein U-like 1
+Hpse;15442;heparanase 
+Hsh2d;209488;hematopoietic SH2 domain containing
+Hyal1;15586;hyaluronoglucosaminidase 1
+Hyal2;15587;hyaluronoglucosaminidase 2
+Hyal3;109685;hyaluronoglucosaminidase 3
+Ido1;15930;indoleamine 2,3-dioxygenase 1
+Ifi27l2;76933;interferon, alpha-inducible protein 27-like 2
+Ifi30;65972;interferon, gamma-inducible protein 30
+Ifi35;70110;interferon, gamma-inducible protein 35
+Ifi44;99899;interferon, gamma-inducible protein 44
+Ifi44l;15061;interferon-induced protein 44-like
+Ifih1;71586;interferon induced with helicase C domain 1
+Ifit1;112419;interferon-induced protein with tetratricopeptide repeats 1 
+Ifit2;15958;interferon-induced protein with tetratricopeptide repeats 2
+Ifit3;667370;interferon-induced protein with tetratricopeptide repeats 3
+Ifitm1;68713;interferon induced transmembrane protein 1
+Ifitm2;80876;interferon induced transmembrane protein 2
+Ifitm3;66141;interferon induced transmembrane protein 3
+Ifne;230405;interferon epsilon
+Igfbp2;16008;insulin-like growth factor binding protein 2, 36kDa
+Ikbkb;16150;Inhibitor Of Nuclear Factor Kappa B Kinase Subunit Beta
+Ikbke;56489;Inhibitor Of Nuclear Factor Kappa B Kinase Subunit Epsilon
+Ikbkg;16151;Inhibitor Of Kappa Light Polypeptide Gene Enhancer In B-Cells, Kinase Gamma
+Il10;16153;interleukin 10
+Il12B;16160;interleukin 12,B
+Il12rb1;16161;interleukin 12 receptor B1
+Il15;16168;interleukin 15
+Il15ra;16169;interleukin 15 receptor, alpha
+Il17rb;50905;interleukin 17 receptor B
+Il1r1;16177;Interleukin 1 Receptor Type 1
+Il1rn;16181;interleukin 1 receptor antagonist 
+Il23a;83430;interleukin 23,A
+Il23r;209590;interleukin 23 receptor,
+Il28ra;242700;interleukin 28 receptor, alpha
+Il6;16193;interleukin 6
+Il6st;16195;interleukin 6 signal transducer
+Impa2;114663;inositol(myo)-1(or 4)-monophosphatase 2
+Irf1;16362;interferon regulatory factor 1 
+Irf2;16363;interferon regulatory factor 2 
+Irf3;54131;interferon regulatory factor 3
+Irf7;54123;interferon regulatory factor 7
+Irf9;16391;interferon regulatory factor 9
+Isg15;100038882;ISG15 ubiquitin-like modifier
+Isg20;57444;interferon stimulated exonuclease gene 20kDa 
+Itch;16396;itchy, E3 ubiquitin protein ligase
+Ivns1abp;117198;influenza virus NS1A binding protein
+Jak2;16452;Janus kinase 2
+Jun;16476;jun proto-oncogene
+Junb;16477;jun B proto-oncogene
+Lamp3;239739;lysosomal-associated membrane protein 3 
+Lap3;66988;leucine aminopeptidase 3
+Lcn2;16819;lipocalin 2
+Lepr;16847;leptin receptor
+Lgals3;16854;lectin, galactoside-binding, soluble, 3 
+Lgals9;16859;lectin, galactoside-binding, soluble, 9
+Lgmn;19141;legumain
+Lipa;16889;legumain
+Lmo2;16909;lipase A, lysosomal acid, cholesterol esterase 
+Lta;16992;LIM domain only 2 (rhombotin-like 1) 
+Ly6e;17069;lymphocyte antigen 6 complex, locus E
+Mab21l2;23937;mab-21-like 2 (C. elegans) 
+Mafb;16658;v-maf avian musculoaponeurotic fibrosarcoma oncogene homolog B
+Maff;17133;v-maf avian musculoaponeurotic fibrosarcoma oncogene homolog F
+Map3k14;53859;mitogen-activated protein kinase kinase kinase 14
+Map3k5;26408;mitogen-activated protein kinase kinase kinase 5
+Mapkapk2;17164;MAP kinase-activated protein kinase 2
+Mastl;67121;microtubule associated serine/threonine kinase-like 
+Mavs;228607;mitochondrial antiviral signaling protein
+Max;17187;MYC associated factor X 
+Mb21d1;214763;Mab-21 domain containing 1
+Mcl1;17210;Mab-21 domain containing 1
+Med14;26896;myeloid cell leukemia 1
+Mfn1;67414;mitofusin 1
+Micb;243864;MHC I like leukocyte 2
+Mkx;210719;mohawk homeobox
+Mov10;17454;Mov10 RISC complex RNA helicase
+Ms4a4a;666907;membrane-spanning 4-domains, subfamily A, member 4A
+Mst1r;19882;macrophage stimulating 1 receptor (c-met-related tyrosine kinase)
+Mt1h;17750;metallothionein 1H
+Mthfd2l;665563;methylenetetrahydrofolate dehydrogenase (NADP+ dependent) 2-like
+Myd88;17874;myeloid differentiation primary response 88
+Myof;226101;myoferlin 
+N4bp1;80750;NEDD4 binding protein 1
+Nampt;59027;nicotinamide phosphoribosyltransferase
+Napa;108124;N-ethylmaleimide-sensitive factor attachment protein, alpha
+Ncf1;17969;neutrophil cytosolic factor 1
+Ncoa3;17979;nuclear receptor coactivator 3 
+Ndc80;67052;NDC80 kinetochore complex component
+Nfil3;18030;nuclear factor, interleukin 3 regulated 
+Nlrx1;270151;N-myc (and STAT) interactor
+Nmi;64685;nucleotide-binding oligomerization domain containing 2 
+Nod2;257632;nitric oxide synthase 2, inducible
+Nos2;18126;neuronal PAS domain protein 2
+Npas2;18143;neuronal PAS domain protein 2
+Nt5c3;107569;5'-nucleotidase, cytosolic III
+Nup50;18141;nucleoporin 50kDa
+Oas1;23960;2'-5'-oligoadenylate synthetase 1, 40/46kDa 
+Oas1b;23961;2'-5' oligoadenylate synthetase 1B
+Oas2;246728;2'-5'-oligoadenylate synthetase 2, 69/71kDa
+Oas3;246727;2'-5'-oligoadenylate synthetase 3, 100kDa
+Oasl;231655;2'-5'-oligoadenylate synthetase-like
+Odc1;18263;ornithine decarboxylase 1
+Ogfr;72075;opioid growth factor receptor
+Optn;71648;optineurin
+Otub1;107260;OTU domain, ubiquitin aldehyde binding 1
+Otub2;68149;OTU domain, ubiquitin aldehyde binding 2
+P2ry6;233571;pyrimidinergic receptor P2Y, G-protein coupled, 6 
+Pabpc4;230721;poly(A) binding protein, cytoplasmic 4 (inducible form)
+Padi2;18600;peptidyl arginine deiminase, type II
+Pdgfrl;68797;platelet-derived growth factor receptor-like 
+Pdia3;14827;protein disulfide isomerase associated 3
+Pdk1;228026;pyruvate dehydrogenase kinase, isozyme 1
+Pfdn6;14976;prefoldin subunit 6
+Pfkfb3;170768;6-phosphofructo-2-kinase/fructose-2,6-biphosphatase 3 
+Phf15;76901;PHD finger protein 15
+Pi4k2b;67073;phosphatidylinositol 4-kinase type 2 beta
+Pias1;56469;protein inhibitor of activated STAT 1
+Pim3;223775;Pim-3 proto-oncogene, serine/threonine kinase
+Pin1;23988;protein (peptidyl-prolyl cis/trans isomerase) NIMA-interacting 1
+Plekha4;69217;pleckstrin homology domain containing, family A (phosphoinositide binding specific) member 4 
+Plin2;11520;perilipin 2
+Plp1;18823;Proteolipid Protein 1
+Plscr1;22038;phospholipid scramblase 1
+Pml;18854;promyelocytic leukemia
+Pmm2;54128;phosphomannomutase 2 
+Pnpt1;71701;polyribonucleotide nucleotidyltransferase 1 
+Pnrc1;108767;proline-rich nuclear receptor coactivator 1
+Ppm1k;243382;protein phosphatase, Mg2+/Mn2+ dependent, 1K
+Prkd2;101540;protein kinase D2
+Prkra;23992;protein kinase, interferon inducible double stranded RNA dependent activator
+Psmb5;19173;proteasome (prosome, macropain) subunit, beta type, 5
+Psmb6;19175;proteasome (prosome, macropain) subunit, beta type, 6
+Psmb8;16913;proteasome (prosome, macropain) subunit, beta type, 8
+Psmb9;16912;proteasome (prosome, macropain) subunit, beta type, 9 
+Ptpn2;19255;protein tyrosine phosphatase, non-receptor type 2
+Ptpn6;15170;protein tyrosine phosphatase, non-receptor type 6
+Pus1;56361;pseudouridylate synthase 1
+Pxk;218699;PX domain containing serine/threonine kinase
+Rab27a;11891;RAB27A, member RAS oncogene family
+Raf1;110157;v-raf-leukemia viral oncogene 1
+Rasgef1b;320292;RasGEF domain family, member 1B
+Rassf4;213391;Ras association (RalGDS/AF-6) domain family member 4
+Rbck1;24105;RanBP-type and C3HC4-type zinc finger containing 1 
+Rbm25;67039;RNA binding motif protein 25
+Rela;19697;v-rel reticuloendotheliosis viral oncogene homolog A (avian)
+Rgs1;50778;regulator of G-protein signaling 1 
+Ripk1;19766;receptor-interacting serine-threonine kinase 2
+Rnase4;58809;Ribonuclease A Family Member 4
+Rnasel;24014;ribonuclease L (2', 5'-oligoisoadenylate synthetase-dependent)
+Rnf114;81018;ring finger protein 114 
+Rnf216;108086;ring finger protein 216
+Rpl22;19934;ribosomal protein L22 
+Rps15a;267019;ribosomal protein S15A
+Rsad2;58185;radical S-adenosyl methionine domain containing 2 
+Rtp4;67775;Receptor Transporter Protein 4
+S100a8;20201;S100 calcium binding protein A8
+Saa1;20209;serum amyloid A1
+Samd4a;74480;sterile alpha motif domain containing 4A
+Samhd1;56045;SAM domain and HD domain 1 
+Sat1;20229;spermidine/spermine N1-acetyltransferase 1
+Scarb2;12492;scavenger receptor class B, member 2 
+Sco2;100126824;SCO2 cytochrome c oxidase assembly protein
+Sectm1;209588;secreted and transmembrane 1 
+Serpinb9;20723;serpin peptidase inhibitor, clade B (ovalbumin), member 9
+Serpine1;18787;serpin peptidase inhibitor, clade E (nexin, plasminogen activator inhibitor type 1), member 1
+Serping1;12258;serpin peptidase inhibitor, clade G (C1 inhibitor), member 1 
+Sike1;66641;suppressor of IKBKE 1
+Sirpa;19261;signal-regulatory protein alpha
+Slc15a3;65221;solute carrier family 15 (oligopeptide transporter), member 3
+Slc16a1;20501;solute carrier family 16 (monocarboxylate transporter), member 1
+Slc1a1;20510;solute carrier family 1 (neuronal/epithelial high affinity glutamate transporter, system Xag), member 1 
+Slc25a28;246696;solute carrier family 25 (mitochondrial iron transporter), member 28 
+Slc25a30;67554;solute carrier family 25, member 30
+Slfn5;327978;schlafen family member 5
+Smad3;17127;SMAD family member 3
+Snn;20621;stannin
+Socs1;12703;suppressor of cytokine signaling 1
+Socs2;216233;suppressor of cytokine signaling 2
+Socs3;12702;suppressor of cytokine signaling 3
+Sp110;109032;SP110 nuclear body protein
+Spaca3;75622;sperm acrosome associated 3
+Spn;20737;sialophorin
+Spsb1;74646;splA/ryanodine receptor domain and SOCS box containing 1
+Sptlc2;20773;serine palmitoyltransferase, long chain base subunit 2 
+Ssbp3;72475;single stranded DNA binding protein 3
+Stap1;56792;signal transducing adaptor family member 1
+Stard5;170460;StAR-related lipid transfer (START) domain containing 5 
+Stat1;20846;signal transducer and activator of transcription 1, 91kDa
+Stat2;20847;signal transducer and activator of transcription 2, 113kDa 
+Stat3;20848;signal transducer and activator of transcription 3
+Steap4;117167;STEAP family member 4
+Sun2;223697;Sad1 and UNC84 domain containing 2
+Tagap;72536;T-cell activation RhoGTPase activating protein
+Tank;21353;TRAF family member-associated Nf-kappa B activator
+Tap1;21354;transporter 1, ATP-binding cassette, sub-family B (MDR/TAP)
+Tap2;21355;transporter 2, ATP-binding cassette, sub-family B (MDR/TAP)
+Tapbp;21356;TAP binding protein
+Tbk1;56480;TANK-binding kinase 1
+Tbx3;21386;T-box 3 
+Tcf7l2;21416;transcription factor 7-like 2 (T-cell specific, HMG-box)
+Tdrd7;100121;tudor domain containing 7 
+Tfec;21426;transcription factor EC
+Thbd;21824;thrombomodulin
+Ticam1;106759;toll-like receptor adaptor molecule 1
+Timp1;21857;TIMP metallopeptidase inhibitor 1
+Tlk2;24086;tousled-like kinase 2 
+Tlr3;142980;toll-like receptor 3
+Tlr7;170743;toll-like receptor 7
+Tlr8;170744;toll-like receptor 8
+Tmem140;68487;transmembrane protein 140
+Tmem173;72512;transmembrane protein 173
+Tmem51;214359;transmembrane protein 51
+Tnf;21926;tumor necrosis factor
+Tnfaip3;21929;tumor necrosis factor, alpha-induced protein 3
+Tnfrsf10a;21933;tumor necrosis factor receptor superfamily, member 10a
+Tnfrsf9;21942;tumor necrosis factor, alpha-induced protein 9
+Tnfsf10;22035;tumor necrosis factor (ligand) superfamily, member 10
+Traf2;22030;TNF Receptor Associated Factor 2 
+Traf3;22031;TNF Receptor Associated Factor 4
+Traf6;22034;TNF Receptor Associated Factor 6
+Trafd1;231712;TRAF-type zinc finger domain containing 1 
+Trex1;22040;three prime repair exonuclease 1 
+Trim14;74735;tripartite motif containing 14
+Trim21;20821;tripartite motif containing 21
+Trim25;217069;tripartite motif containing 25
+Trim38;214158;tripartite motif containing 38
+Trim5;667823;tripartite motif containing 5
+Trim56;384309;tripartite motif containing 56
+Txnip;56338;Thioredoxin Interacting Protein
+Tyk2;54721;Tyrosine Kinase 2
+Tymp;72962;thymidine phosphorylase 
+Uba7;74153;ubiquitin-like modifier activating enzyme 7
+Ube2l6;56791;ubiquitin-conjugating enzyme E2L 6
+Ulk4;209012;unc-51 like kinase 4 
+Unc93b1;54445;unc-93 homolog B1 (C. elegans)
+Upp2;76654;Uridine Phosphorylase 2
+Uri1;19777;URI1, prefoldin-like chaperone
+Usp18;24110;ubiquitin specific peptidase 18
+Vamp5;53620;vesicle-associated membrane protein 5
+Vav1;22324;vav 1 oncogene
+Vegfc;22341;vascular endothelial growth factor C
+Vmp1;75909;vacuole membrane protein 1
+Wars;22375;tryptophanyl-tRNA synthetase
+Whamm;434204;WAS protein homolog associated with actin, golgi membranes and microtubules
+Xaf1;327959;XIAP associated factor 1
+Xcl1;16963;chemokine (C motif) ligand 1
+Xpr1;19775;xenotropic and polytropic retrovirus receptor 1
+Zbp1;58203;Z-DNA Binding Protein 1
+Zc3hav1;78781;zinc finger CCCH-type, antiviral 1
+Znf295;114565;zinc finger protein 295 
+Znf385b;241494;zinc finger protein 385B
