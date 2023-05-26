@@ -23,5 +23,14 @@ This repository contains four folders:
 
 A detailed description of each individual script can be found in the header of the script. 
 
+### Packages used
+This work was build on the shoulders of giants and I would like to give credit where credit is due. So here a list of R/Python packages that have been used in this project and you should definitely check out:
+
+- [Scanpy](https://scanpy.readthedocs.io/en/stable/): a scalable toolkit for analyzing single-cell gene expression data.
+- [Seurat](https://satijalab.org/seurat/): an R package designed for QC, analysis, and exploration of single-cell RNA-seq data.
+- [Scanorama](https://github.com/brianhie/scanorama): enables batch-correction and integration of heterogeneous scRNA-seq datasets.
+- [Libra](https://github.com/neurorestore/Libra): an R package to perform differential expression on single-cell data.
+- 
+
 ### Running our scripts
 XXX 
