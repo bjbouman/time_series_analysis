@@ -30,7 +30,7 @@ This work was build on the shoulders of giants and I would like to give credit w
 - [Seurat](https://satijalab.org/seurat/): an R package designed for QC, analysis, and exploration of single-cell RNA-seq data.
 - [Scanorama](https://github.com/brianhie/scanorama): enables batch-correction and integration of heterogeneous scRNA-seq datasets.
 - [Libra](https://github.com/neurorestore/Libra): an R package to perform differential expression on single-cell data.
-- 
+- [topGO](https://bioconductor.org/packages/release/bioc/vignettes/topGO/inst/doc/topGO.pdf): a package designed to facilitate semi-automated enrichment analysis for Gene Ontology (GO) terms.
 
 ### Running our scripts
 XXX 
