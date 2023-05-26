@@ -2,7 +2,7 @@
 
 Welcome! This Github repository is complementary to our paper "_Single-cell time series analysis reveals the dynamics of HSPCs response to inflammation_", which is out as [preprint on Biorxiv](https://www.biorxiv.org/content/10.1101/2023.03.09.531881v1.abstract) All of the figures in the manuscript and the extended figures can be reproduced using the scripts in this folder.
 
-If any point you have any questions, comments, improvements, feel free to reach out by opening an issue. 
+If you have any questions, comments, improvements, feel free to reach out by opening an issue. 
 
 ### Overview repository
 This repository contains four folders:
