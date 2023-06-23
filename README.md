@@ -19,7 +19,7 @@ This repository contains four folders:
 3. **pseudotime** Script 3.1 is used to calculate response pseudotime. In 3.2. the pseudotime and pseudotemporal order are visualized in a 3D plot. In 3.3. we explore the dynamics of response genes in pseudotime and categorize the response genes based on their dynamics. In 3.4. and 3.5. the gene ontology (GO) terms for each of the categories of responses are found and visualized. Scripts 3.6., 3.7. and 3.8 explores the weights of the response genes and especially which genes get the highest weights. 
 4. **downstream analyses** Script 4.1 creates a heatmap that combines the change score groups and the pseudotime patterns of the response genes. Script 4.3 plots the expression of a few interesting genes in pseudotime.
 5. **abundance analysis** Script 5.1 plots the abundance of each cluster as a percentage. Script 5.2 uses a more advanced approach for abundance analysis, relying on neighborhoods. Script 5.3 is used to plot the expression of Ly6a/Sca-1 in the different experimental timepoints.
-6. XXX
+6. **signatures in pseudotime** Both script 6.1 and 6.2 plot different gene signatures in pseudotime for different clusters and cell types. Script 6.1 focuses on signatures of cell death, whereas script 6.2 plots other biological processes.
 
 A detailed description of each individual script can be found in the header of the script. 
 
@@ -32,6 +32,3 @@ This work was build on the shoulders of giants and I would like to give credit w
 - [Libra](https://github.com/neurorestore/Libra): an R package to perform differential expression on single-cell data.
 - [topGO](https://bioconductor.org/packages/release/bioc/vignettes/topGO/inst/doc/topGO.pdf): a package designed to facilitate semi-automated enrichment analysis for Gene Ontology (GO) terms.
 - [Milo](https://marionilab.github.io/miloR/articles/milo_demo.html): a tool for analysis of complex single cell datasets generated from replicated multi-condition experiments, which detects changes in composition between conditions.
-
-### Running our scripts
-XXX 
