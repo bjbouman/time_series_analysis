@@ -1,0 +1,354 @@
+---
+title: "Hashtag oligo barcode QC"
+subtitle: "analyzing the HTO distribution for the IFNA-BM-Niche project"
+date: '`r format(Sys.Date(), "%B %d, %Y")`'
+output: 
+  html_document:
+    theme: paper
+    toc: true
+    toc_float: true
+    number_sections: true
+    fig_caption: true
+    fig_width: 7
+    fig_height: 6
+---
+
+```{r setup, include=FALSE, error=FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = FALSE,
+                      include = TRUE,
+                      warning = FALSE, 
+                      message = FALSE, 
+                      cache.lazy = FALSE, 
+                      tidy = FALSE)
+
+knitr::opts_chunk$set(options(stringsAsFactors = FALSE))
+```
+  
+<br/><br/><br/>  
+
+# Setting up the QC pipeline  
+
+<br/><br/> 
+  
+## Packages  
+
+<br/><br/>
+
+```{r 1.1_Packages}
+
+# choose packages to install and/or load
+pkg <- c("knitr", "kableExtra",
+         "dplyr", "tibble", "tidyr", "stringr", "magrittr",
+         "ggplot2", "grid", "gridExtra", "RColorBrewer",
+         "Matrix", "Seurat", "caret")
+
+new.pkg <- pkg[!(pkg %in% installed.packages())]
+
+if (!requireNamespace("BiocManager", quietly = TRUE)) {
+  install.packages("BiocManager")
+}
+
+if (length(new.pkg)) {
+  BiocManager::install(new.pkg, dependencies = TRUE)
+  sapply(pkg, require, character.only = TRUE)
+} else sapply(pkg, require, character.only = TRUE)
+
+options(stringsAsFactors = FALSE)
+```
+
+<br/><br/>
+
+## input and output directories  
+
+<br/><br/>
+
+```{r 1.2-Directories}
+data.dir <- "/data/dir"
+```
+
+<br/><br/>
+  
+# Loading data and curating dataset  
+  
+<br/>
+  
+The output of the CITE-Seq Count pipeline is a count matrix (reads and UMI counts), consisting of:  
+a file with the **feature IDs**, representing all hashtags (HTOs) quantified,  
+a file with the **cell IDs**, representing all cell barcodes quantified,  
+a **matrix** of counts per hashtag for every cell.  
+<br/>  
+Plus it also provides a report.yaml, a list of uncorrected cells, and unmapped reads, if of interest.
+
+<br/><br/>
+
+## Loading the data
+  
+<br/>
+
+```{r 2.1_ReadData}
+# list all files in dir dir
+Experiment <- list.files(path = data.dir, include.dirs = T)
+
+# choose file for downstream QC
+file <- 1
+
+# read in count matrix  
+HTO_m <- Read10X(file.path(data.dir, Experiment[file], "umi_count"), 
+                 gene.column = 1)
+
+# adapt cell bcs to have 10x standard
+colnames(HTO_m) <- paste(colnames(HTO_m), "1", sep = "-")
+#head(colnames(HTO_m))
+
+# order by descending counts
+counts_per_cell <- Matrix::colSums(HTO_m[1:4,])
+HTO_m <- rbind(HTO_m, counts_per_cell)
+HTO_m <- HTO_m[,order(HTO_m[4,], decreasing = T)]
+
+# show table
+HTO_m[,1:3] %>%
+  kable(caption = "First three entries of HTO Count matrix") %>%
+   kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+```
+  
+<br/>
+
+For experiment   **`r Experiment[file]`**:  
+Overall, `r ncol(HTO_m)` cell barcodes could be recovered.  
+`r length(counts_per_cell[counts_per_cell==0])` cells have **0** HTO barcode count,  
+`r length(counts_per_cell[counts_per_cell>0])` cells have **at least 1** HTO barcode count,  
+`r length(counts_per_cell[counts_per_cell>10])` cells have **at least 10** HTO barcode counts.  
+  
+<br/>  
+
+## Filtering the data
+
+<br/>
+  
+For downstream QC and visualization, cells with 0 HTO counts will be removed.  
+  
+<br/>  
+  
+```{r 2.2_FilterData}
+
+## filter HTO count matrix
+# only keep cells that have at least 1 read
+HTO_m <- HTO_m[,Matrix::colSums(HTO_m[1:4,]) >0]
+
+HTO_df <- as.data.frame(t(HTO_m)) %>%
+  arrange(desc(counts_per_cell)) %>%
+  rowid_to_column("rank") %>%
+  tidyr::gather(key = Tag, value = value, 
+                `tag1-ACCCACCAGTAAGAC`:`tag4-AAAGCATTCTTCACG`) %>%
+  arrange(rank) %>%
+  filter(value > 0)
+
+#head(HTO_df)
+
+```
+  
+<br/><br/>
+  
+# Visualizing results 
+
+<br/><br/>
+
+### Count depth
+
+<br/>
+
+```{r 3.1-Plotting_count_depth, fig.height=6 ,fig.width=10}
+
+def.par <- par()
+
+## overall counts per cell
+counts_per_cell <- Matrix::colSums(HTO_m[1:4,])
+
+## show overall count depth distribution as ranksize
+plot(sort(counts_per_cell, decreasing = TRUE),
+     xlab = "Barcode rank", ylab = "counts per cell",
+     main = "Barcode Rank plot - all counts", log="xy", col ="royalblue")
+
+cat("\n")
+
+## show count depth distribution per tag as ranksize
+cols <- brewer.pal(n = 4, name = "Set1")
+layout(matrix(c(1,2,3,4), 2, 2, byrow = TRUE))
+for (i in 1:4) suppressWarnings({
+plot(sort(HTO_m[i,], decreasing = TRUE),
+             xlab = "Barcode rank", ylab = "counts per cell",
+             main = paste("Count depth for", rownames(HTO_m)[i]), 
+     log="xy", col =cols[i])
+})
+suppressWarnings(par(def.par))
+
+cat("\n")
+
+#plot counts per cell
+
+p1 <- ggplot(data = HTO_df, aes(x=counts_per_cell, fill = Tag)) +
+  geom_histogram(position = "stack",
+                 #alpha=0.5,
+                 binwidth = .1,
+                 #col="black",
+                 size=1) +
+  scale_fill_brewer(palette = "Spectral") +
+  scale_x_log10() +
+  theme_minimal() + 
+  xlab("log10 Count depth") + 
+  #facet_grid(rows = "Tag") +
+  ggtitle("Expression sum per hashtag per cell") +
+  theme(legend.position = "none")
+
+p2 <- ggplot(data = HTO_df %>% filter(counts_per_cell < 11),
+       aes(x=counts_per_cell, fill = Tag)) +
+  geom_histogram(binwidth = 1,
+                 #col="black",
+                 size=1) +
+ # scale_x_log10()+
+  scale_fill_brewer(palette = "Spectral") +
+  theme_minimal() +
+  xlab("Count depth") +
+  ggtitle("Expression sum per hashtag per cell   < 11 counts") 
+
+ p3 <- ggplot(data = HTO_df %>% filter(counts_per_cell < 100 & counts_per_cell > 10),
+       aes(x=counts_per_cell, fill = Tag)) +
+  geom_histogram(aes(fill=Tag),
+                 binwidth = 1,
+                 #col="black",
+                 size=1) +
+ # scale_x_log10()+
+  scale_fill_brewer(palette = "Spectral") +
+  theme_minimal() +
+  xlab("Count depth") +
+  ggtitle("Expression sum per hashtag per cell   11 - 99 counts") +
+  theme(legend.position = "none")
+
+p4 <- ggplot(data = HTO_df %>% filter(counts_per_cell > 99), 
+      aes(x=counts_per_cell, fill = Tag)) +
+  geom_histogram(aes(fill=Tag),
+                 binwidth = 100,
+                 #col="black",
+                 size=1) +
+  #scale_x_log10()+
+  scale_fill_brewer(palette = "Spectral") +
+  theme_minimal() +
+  xlab("Count depth") +
+  ggtitle("Expression sum per hashtag per cell   > 99 counts") +
+  theme(legend.position = "none")
+
+cowplot::plot_grid(p1, p2, p3, p4,
+                   rel_widths = c(1, 1, 1, 1),
+  ncol = 2) +
+  cowplot::panel_border()
+
+cat("\n")
+suppressWarnings(par(def.par))
+```
+
+<br/>
+
+## Overall hashtags detected
+
+<br/>
+
+```{r 3.2-Plotting_tags_per_cell, fig.height=6 ,fig.width=10}
+# Let's check how many HTO tags can be detected per cell and
+# investigate the distribution
+## number of tags being detected per cell
+tags_per_cell <- Matrix::colSums(HTO_m[1:4,]>0)
+
+table(tags_per_cell) %>%
+  kable(caption = "Total number of HTO tags per cell") %>%
+   kable_styling(bootstrap_options = c("striped", "hover", 
+                                       "condensed"),full_width = F)
+
+cat("\n")
+
+#plot tags per cell
+t <- as.data.frame(table(tags_per_cell))
+t$sqFreq <- sqrt(t$Freq)
+
+def.par <- par()
+par(mar=c(4,4,4,4))
+barplot(t$Freq, main="Tags per cell", horiz = T,
+        las=1, xlim=range(pretty(c(0, t$Freq))),
+        xlab = "Number of cells",
+        ylab = "Number of tags",
+        names.arg = t$tags_per_cell,
+        col="#69b3a2")
+
+cat("\n")
+
+par(mar=c(4,4,4,4))
+barplot(t$sqFreq, main="Tags per cell", horiz = T,
+        las=1, xlim=range(pretty(c(0, t$sqFreq))),
+        xlab = "Number of cells (sqrt)",
+        ylab = "Number of tags",
+        names.arg = t$tags_per_cell,
+        col="#69b3a2")
+
+cat("\n")
+
+suppressWarnings(par(def.par))
+```
+
+<br/>
+  
+##  Counts & Cells per hashtag
+
+<br/>
+  
+```{r 3.3-Plotting_X_per_tag, fig.height=8 ,fig.width=12}
+
+# Let's check how many HTO tags could be found in the library and
+# how many cells have the hash tags
+## overall number of HTO hashtags found
+counts_per_tag <- Matrix::rowSums(HTO_m[1:4,])
+
+stack(counts_per_tag) %>%
+  arrange(desc(values)) %>%
+  rename(count=values, HTO=ind) %>%
+  kable(caption = "Total number of HTO tags being found (in decreasing order)") %>%
+   kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+  
+cat("\n")
+
+# plot counts per tag
+def.par <- par()
+par(mar=c(4,12,4,4))
+barplot(counts_per_tag, main="Counts per tag", horiz = T,
+        las=1, xlim=range(pretty(c(0, counts_per_tag))),
+        col="#69b3a2")
+
+cat("\n")
+
+
+## number of cells having the specific HTO hashtag
+cells_per_tag <- Matrix::rowSums(HTO_m[1:4,]>0) # only count cells where at least 1 tag is expressed
+
+stack(cells_per_tag) %>%
+  arrange(desc(values)) %>%
+  rename(count=values, HTO=ind) %>%
+  kable(caption = "Number of cells having the specific HTO hashtag (non-unique)") %>%
+   kable_styling(bootstrap_options = c("striped", "hover", "condensed"))
+
+cat("\n")
+
+# plot cells per tag
+par(mar=c(4,12,4,4))
+barplot(cells_per_tag, main="Cells per tag (non-unique)", horiz = T,
+        las=1, xlim=range(pretty(c(0, cells_per_tag))),
+        col="#69b3a2")
+
+par(def.par)
+```
+
+<br/>
+<br/>
+
+```{r 5.1-SessionInfo}
+sessionInfo()
+```

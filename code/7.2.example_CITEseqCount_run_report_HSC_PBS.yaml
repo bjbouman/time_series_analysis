@@ -1,0 +1,24 @@
+Date: 2020-10-28
+Running time: 4.0 hours, 57.0 minutes, 1.859 seconds
+CITE-seq-Count Version: 1.4.3
+Reads processed: 112683320
+Percentage mapped: 79
+Percentage unmapped: 21
+Uncorrected cells: 0
+Correction:
+	Cell barcodes collapsing threshold: 1
+	Cell barcodes corrected: 198895
+	UMI collapsing threshold: 1
+	UMIs corrected: 681988
+Run parameters:
+	Read1_paths: /icgc/dkfzlsdf/analysis/OE0416_projects/ifna-bmniche/10x/data/hashtags/FASTQ/OE0416_ifna_bmniche_HSC_02_pbs_S1_L001_R1_001.fastq.gz
+	Read2_paths: /icgc/dkfzlsdf/analysis/OE0416_projects/ifna-bmniche/10x/data/hashtags/FASTQ/OE0416_ifna_bmniche_HSC_02_pbs_S1_L001_R2_001.fastq.gz
+	Cell barcode:
+		First position: 1
+		Last position: 16
+	UMI barcode:
+		First position: 17
+		Last position: 28
+	Expected cells: 10000
+	Tags max errors: 2
+	Start trim: 0
