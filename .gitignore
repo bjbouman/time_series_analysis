@@ -18,3 +18,7 @@ figures/
 extra_figures/
 
 ### other
+.DS_Store
+code/.DS_Store
+data/.DS_Store
+results/.DS_Store
