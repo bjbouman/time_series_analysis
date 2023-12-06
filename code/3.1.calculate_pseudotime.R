@@ -46,6 +46,7 @@ HSC72h <- subset(x = adata, subset = (time=="72h"))
 
 X <- adata@assays[["RNA"]]@counts
 X <- as.matrix(X)
+# X <- rbind ( rep(1,ncol(X)) , X ) # for a regression model WITH intercept include this line
 
 # get experimental timepoint for each cell
 Tvect=c(rep(0,ncol(HSCcontrol)),rep(1,ncol(HSC3h)),rep(2,ncol(HSC24h)),rep(3,ncol(HSC72h)))
